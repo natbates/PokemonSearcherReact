@@ -6,7 +6,11 @@ import FavouritesPage from "./FavouritesPage";
 import FrontPage from "./FrontPage";
 import { FavoritePokemonsProvider } from "./FavouritePokemonContext";
 
+
+// fetch API data only once, useContext, loading screen
+
 function App() {
+
     return (
         <FavoritePokemonsProvider>
             <Router>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "./Header";
 import { Pokedex } from "./Pokedex";
+import { Favourites } from "./FavouritesPokedex";
 
 function FavouritesPage()
 {
@@ -8,7 +9,7 @@ function FavouritesPage()
         <div>
             <Header />
             <h2>Favourites</h2>
-            <Pokedex favourites = {true}></Pokedex>
+            <Favourites />
         </div>
     );
 }

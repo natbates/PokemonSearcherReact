@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/card.css';
 import { searchPokemon } from "../utils/pokemonAPI";
 import { useFavoritePokemons } from "./FavouritePokemonContext";
 
@@ -10,8 +11,6 @@ export function Card({pokemon, handleSelectedPokemon, toggleCardVisibility, favo
         handleSelectedPokemon(data);
         toggleCardVisibility(true);
     }
-
-    console.log(favourites);
 
     return (
         <div className="Card-container">

@@ -13,7 +13,6 @@ function FrontPage() {
 
   const toggleCardVisibility = (value) => {
     setValid(value);
-    console.log("Value " + value);
   }
 
   const handleSelectedPokemon = (pokemon) =>
@@ -27,7 +26,7 @@ function FrontPage() {
       <Header />
       <SearchInput handleSelectedPokemon = {handleSelectedPokemon} toggleCardVisibility = {toggleCardVisibility}/>
       <Information pokemon = {currentPokemon} isVisible = {valid}/>
-      <Pokedex favourites = {false} handleSelectedPokemon = {handleSelectedPokemon} toggleCardVisibility = {toggleCardVisibility}/>
+      <Pokedex handleSelectedPokemon = {handleSelectedPokemon} toggleCardVisibility = {toggleCardVisibility}/>
     </div>
   );
 }

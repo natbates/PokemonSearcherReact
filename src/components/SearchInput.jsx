@@ -9,12 +9,12 @@ export function SearchInput({handleSelectedPokemon, toggleCardVisibility}) {
     async function handleClick() 
     {
         if (input.trim()) {    
-            // Await the result of searchPokemon
+
             const result = await searchPokemon(input);
             if (result) {
                 handleSelectedPokemon(result);
             } else {
-                toggleCardVisibility(false); // Hide the card if the result is false
+                toggleCardVisibility(false);
             }
         }
     }
