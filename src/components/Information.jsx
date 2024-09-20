@@ -35,9 +35,7 @@ export function Information({ pokemon, isVisible }) {
             <p><strong>Special-Attack:</strong> <span>{pokemon.specialAttack}</span></p>
             <p><strong>Special-Defense:</strong> <span>{pokemon.specialDefense}</span></p>
             <p><strong>Speed:</strong> <span>{pokemon.speed}</span></p>
-            <button onClick={FavouritePokemon} className="Fav">
-              {isFavorite(pokemon.id) ? 'Unfavorite' : 'Favorite'}
-            </button>
+          
           </div>
           <div className="image-container">
             <img 
@@ -45,6 +43,9 @@ export function Information({ pokemon, isVisible }) {
               src={pokemon.sprites.front_default} 
               alt={pokemon.name} 
             />
+          <button onClick={FavouritePokemon} className="Fav">
+              {isFavorite(pokemon.id) ? 'Unfavorite' : 'Favorite'}
+            </button>
           </div>
         </div>
     );

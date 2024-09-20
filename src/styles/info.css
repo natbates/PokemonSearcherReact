@@ -8,12 +8,15 @@
     transition: all 0.3s ease;
     display: flex;
     align-items: center; /* Centers content vertically */
+    overflow: hidden;
+
 }
 
 .Info .content {
     flex: 1;
     margin-right: 10px;
     min-width: 10%;
+    flex-direction: column;
 }
 
 .Info .content p {
@@ -37,10 +40,11 @@
 
 .image-container {
     display: flex;
-    justify-content: right; /* Centers the image horizontally */
-    align-items: right;     /* Centers the image vertically within its own height */
-    flex: 2;                 /* Allows the image container to grow and take more space */
-    text-align: right;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-end; /* Push items to the bottom */
+    align-items: center; /* Center items horizontally */
+    flex: 2; /* Allows the image container to grow and take more space */
+    text-align: center;
 }
 
 .image-container img {
@@ -57,7 +61,35 @@
 }
 
 .Fav {
-    margin-top: 10px;
+    margin-top: 15px; /* Add some space above the button */
     border-radius: 6px;
-    min-width: 300%;
+    width: 60%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Info {
+        flex-direction: column; /* Stack content vertically on small screens */
+    }
+
+    .Info .content
+    {
+        margin-bottom: 10%;
+    }
+
+    .image-container {
+        justify-content: center; /* Center the image horizontally */
+        align-items: center;     /* Center the image vertically */
+        text-align: center;
+    }
+
+    .image-container img {
+        min-width: 300%; /* Make the image take full width on small screens */
+        max-width: 400%;
+    }
+    
+    .Fav
+    {
+        width: 300%;
+    }
 }

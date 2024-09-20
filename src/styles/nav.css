@@ -46,7 +46,6 @@ nav {
   #search-button {
     display: flex;
     border-radius: 5px;
-    width: 50vh;
     justify-content: center;
     margin: 0 auto; /* Center the button horizontally */
     border: black 2px solid;
@@ -55,7 +54,7 @@ nav {
   
   .nav-button {
     padding: 8px 12px;
-    width: 15vh;
+    width: 100px;
     background-color: #007bff;
     color: white;
     border: none;
