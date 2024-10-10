@@ -1,6 +1,4 @@
 Pokemon searcher app converted to React.
 
-
-// TO DO
-
-make display better on mobile
+Check it out here:
+https://pokemonsearcher.netlify.app/
